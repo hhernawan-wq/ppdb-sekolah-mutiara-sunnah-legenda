@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB TK & SD Sekolah Mutiara Sunnah Legenda</title>
+    <meta name="description" content="Sekolah Islam Premium Berbasis Tahfidz, Sunnah, dan Adab. Daftar PPDB sekarang untuk Tahun Ajaran Baru.">
+    <meta property="og:title" content="PPDB TK & SD Sekolah Mutiara Sunnah Legenda">
+    <meta property="og:description" content="Sekolah Islam Premium Berbasis Tahfidz, Sunnah, dan Adab">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --ivory: #F9F8F4;
+            --sage: #9FAF9A;
+            --forest: #6E8F7D;
+            --sky: #A9C6E8;
+            --emerald: #3E9E6A;
+            --gold: #C9B26D;
+            --text-dark: #2D3748;
+            --text-light: #4A5568;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--ivory);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-dark);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(249, 248, 244, 0.95);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--emerald);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--forest);
+        }
+
+        .logo-subtext {
+            font-size: 0.8rem;
+            color: var(--sage);
+            margin-top: -3px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 80px;
+            background-color: var(--ivory);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(168, 198, 232, 0.1) 0%, rgba(110, 143, 125, 0.05) 100%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--forest);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            max-width: 900px;
+            height: 350px;
+            margin: 40px 0;
+            position: relative;
+            background: linear-gradient(to right, var(--sky) 0%, var(--sage) 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .illustration-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .character {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .boy {
+            bottom: 0;
+        }
+
+        .girl {
+            bottom: 0;
+        }
+
+        .character-body {
+            position: relative;
+            z-index: 2;
+        }
+
+        .character-head {
+            width: 60px;
+            height: 60px;
+            background-color: #f5d5b0;
+            border-radius: 50%;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Faceless character - tidak ada wajah */
+        .character-head::after {
+            display: none;
+        }
+
+        .boy-shirt {
+            width: 80px;
+            height: 100px;
+            background-color: var(--forest);
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            top: -10px;
+        }
+
+        .boy-pants {
+            width: 90px;
+            height: 120px;
+            background-color: #3a506b;
+            border-radius: 0 0 15px 15px;
+            position: relative;
+            top: -10px;
+        }
+
+        /* Celana di atas mata kaki */
+        .boy-pants::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #3a506b;
+        }
+
+        .girl-hijab {
+            width: 100px;
+            height: 70px;
+            background-color: var(--emerald);
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            top: -10px;
+            z-index: 2;
+        }
+
+        .girl-dress {
+            width: 100px;
+            height: 130px;
+            background-color: var(--sky);
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            top: -20px;
+            z-index: 1;
+        }
+
+        /* Busana longgar syar'i */
+        .girl-dress::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: -5px;
+            width: 110px;
+            height: 30px;
+            background-color: var(--sky);
+            border-radius: 0 0 50% 50%;
+        }
+
+        .quran {
+            width: 80px;
+            height: 100px;
+            background-color: var(--gold);
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .school-building {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-color: var(--sage);
+            border-radius: 15px 15px 0 0;
+            z-index: 1;
+        }
+
+        .school-building::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: 20%;
+            width: 60%;
+            height: 60px;
+            background-color: var(--forest);
+            border-radius: 10px 10px 0 0;
+        }
+
+        .school-building::after {
+            content: "";
+            position: absolute;
+            top: -60px;
+            left: 30%;
+            width: 40%;
+            height: 40px;
+            background-color: var(--gold);
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* Cahaya pagi ala Studio Ghibli */
+        .sun-rays {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%;
+        }
+
+        .cta-button {
+            background-color: var(--emerald);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(62, 158, 106, 0.3);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #2e8a57;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(62, 158, 106, 0.4);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--forest);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        /* Values Section */
+        .values-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--gold);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(169, 198, 232, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--forest);
+            font-size: 30px;
+        }
+
+        .value-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background-color: rgba(159, 175, 154, 0.1);
+            border-radius: 20px;
+            margin: 40px 0;
+            padding: 50px;
+        }
+
+        .problem-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .problem-illustration {
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            background: linear-gradient(to right, var(--gold) 0%, var(--sage) 100%);
+            border-radius: 15px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Solution Section */
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .solution-illustration {
+            height: 300px;
+            background: linear-gradient(to bottom, var(--sky) 0%, var(--forest) 100%);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Programs Section */
+        .programs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .program-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--emerald);
+        }
+
+        .program-icon {
+            font-size: 24px;
+            color: var(--emerald);
+            margin-bottom: 15px;
+        }
+
+        /* Advantages Section */
+        .advantages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .advantage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .advantage-icon {
+            color: var(--emerald);
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        /* Floating Share Button */
+        .share-button {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--emerald);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .share-button:hover {
+            background-color: #2e8a57;
+            transform: scale(1.1);
+        }
+
+        /* Sticky CTA Mobile */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 15px 20px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            text-align: center;
+        }
+
+        .sticky-cta .cta-button {
+            max-width: 100%;
+            margin-top: 10px;
+            padding: 15px;
+        }
+
+        .sticky-subtext {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--forest);
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: var(--emerald);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Divider */
+        .divider {
+            height: 3px;
+            width: 100px;
+            background: linear-gradient(to right, var(--gold), var(--emerald));
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-illustration {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 130px 0 60px;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-illustration {
+                height: 250px;
+            }
+            
+            .problem-section {
+                padding: 30px 20px;
+            }
+            
+            .sticky-cta {
+                display: block;
+            }
+            
+            .cta-button.hero-cta {
+                margin-bottom: 80px;
+            }
+            
+            .share-button {
+                bottom: 80px;
+                right: 15px;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero-title {
+                font-size: 1.6rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .values-container, .programs-container, .advantages-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-illustration {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div>
+                        <div class="logo-text">Sekolah Mutiara Sunnah</div>
+                        <div class="logo-subtext">TK & SD Islam Premium</div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#daftar" class="cta-button" style="padding: 12px 25px; font-size: 1rem; max-width: none;">Daftar PPDB</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">PPDB TK & SD Sekolah Mutiara Sunnah Legenda</h1>
+                <p class="hero-subtitle">Sekolah Islam Premium Berbasis Tahfidz, Sunnah, dan Adab</p>
+                
+                <div class="hero-illustration">
+                    <div class="illustration-content">
+                        <div class="sun-rays"></div>
+                        <div class="character boy">
+                            <div class="character-head"></div>
+                            <div class="character-body">
+                                <div class="boy-shirt"></div>
+                                <div class="boy-pants"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="quran">
+                            <i class="fas fa-book-quran"></i>
+                        </div>
+                        
+                        <div class="character girl">
+                            <div class="character-head"></div>
+                            <div class="character-body">
+                                <div class="girl-hijab"></div>
+                                <div class="girl-dress"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="school-building"></div>
+                    </div>
+                </div>
+                
+                <a href="#daftar" class="cta-button hero-cta">Daftar PPDB Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Value Utama Pendidikan Kami</h2>
+            <div class="divider"></div>
+            
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-quran"></i>
+                    </div>
+                    <h3 class="value-title">Tahfidz Al-Qur'an Sejak Dini</h3>
+                    <p>Program tahfidz terstruktur yang disesuaikan dengan usia dan kemampuan anak, dengan metode menghafal yang menyenangkan.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="value-title">Pendidikan Sesuai Sunnah</h3>
+                    <p>Kurikulum yang mengintegrasikan nilai-nilai sunnah Rasulullah dalam setiap aspek pembelajaran sehari-hari.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="value-title">Pembiasaan Adab & Akhlak</h3>
+                    <p>Pembentukan karakter melalui pembiasaan adab islami dalam interaksi sehari-hari di sekolah dan rumah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="container">
+            <div class="problem-section">
+                <div class="problem-content">
+                    <h2 class="section-title">Ingin Anak Tumbuh Shalih, Beradab, dan Cinta Al-Qur'an?</h2>
+                    <p class="section-subtitle">Orang tua menginginkan sekolah yang menjaga akidah, adab, dan kebiasaan islami anak sejak usia dini.</p>
+                    
+                    <div class="problem-illustration">
+                        <!-- Ilustrasi faceless orang tua dengan suasana rumah hangat -->
+                        <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; gap: 40px;">
+                            <!-- Ayah -->
+                            <div style="position: relative;">
+                                <div style="width: 60px; height: 60px; background-color: #f5d5b0; border-radius: 50%;"></div>
+                                <div style="width: 80px; height: 100px; background-color: var(--forest); border-radius: 10px 10px 0 0; position: relative; top: -10px;"></div>
+                                <div style="width: 90px; height: 120px; background-color: #3a506b; border-radius: 0 0 15px 15px; position: relative; top: -10px;"></div>
+                            </div>
+                            
+                            <!-- Ibu -->
+                            <div style="position: relative;">
+                                <div style="width: 60px; height: 60px; background-color: #f5d5b0; border-radius: 50%;"></div>
+                                <div style="width: 100px; height: 70px; background-color: var(--emerald); border-radius: 50% 50% 0 0; position: relative; top: -10px; z-index: 2;"></div>
+                                <div style="width: 100px; height: 130px; background-color: var(--sky); border-radius: 10px 10px 0 0; position: relative; top: -20px; z-index: 1;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Sekolah Mutiara Sunnah Legenda</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Sekolah Islam premium yang memadukan tahfidz Al-Qur'an, pendidikan sunnah, dan akademik dengan pendekatan ramah anak.</p>
+            
+            <div class="solution-content">
+                <div>
+                    <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: var(--forest);">Visi Kami</h3>
+                    <p style="margin-bottom: 20px;">Membentuk generasi muslim yang hafal Al-Qur'an, berakhlak mulia, dan berilmu bermanfaat sesuai tuntunan sunnah Nabi Muhammad ﷺ.</p>
+                    
+                    <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: var(--forest);">Misi Kami</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 12px; padding-left: 25px; position: relative;">
+                            <i class="fas fa-check" style="color: var(--emerald); position: absolute; left: 0;"></i>
+                            Menyelenggarakan pendidikan islami yang mengintegrasikan tahfidz Al-Qur'an, sunnah, dan kurikulum nasional
+                        </li>
+                        <li style="margin-bottom: 12px; padding-left: 25px; position: relative;">
+                            <i class="fas fa-check" style="color: var(--emerald); position: absolute; left: 0;"></i>
+                            Menciptakan lingkungan pendidikan yang syar'i, nyaman, dan kondusif untuk perkembangan anak
+                        </li>
+                        <li style="margin-bottom: 12px; padding-left: 25px; position: relative;">
+                            <i class="fas fa-check" style="color: var(--emerald); position: absolute; left: 0;"></i>
+                            Membangun kerjasama yang baik dengan orang tua dalam mendidik anak secara islami
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="solution-illustration">
+                    <!-- Ilustrasi faceless guru menyimak hafalan anak -->
+                    <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; align-items: flex-end; gap: 30px;">
+                        <!-- Guru -->
+                        <div style="position: relative;">
+                            <div style="width: 70px; height: 70px; background-color: #f5d5b0; border-radius: 50%;"></div>
+                            <div style="width: 100px; height: 80px; background-color: var(--forest); border-radius: 10px 10px 0 0; position: relative; top: -10px;"></div>
+                            <div style="width: 110px; height: 140px; background-color: #3a506b; border-radius: 0 0 15px 15px; position: relative; top: -10px;"></div>
+                        </div>
+                        
+                        <!-- Anak -->
+                        <div style="position: relative;">
+                            <div style="width: 50px; height: 50px; background-color: #f5d5b0; border-radius: 50%;"></div>
+                            <div style="width: 70px; height: 60px; background-color: var(--sky); border-radius: 10px 10px 0 0; position: relative; top: -10px;"></div>
+                            <div style="width: 80px; height: 90px; background-color: var(--gold); border-radius: 0 0 15px 15px; position: relative; top: -10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section" style="background-color: rgba(169, 198, 232, 0.1);">
+        <div class="container">
+            <h2 class="section-title">Program TK & SD Unggulan</h2>
+            <div class="divider"></div>
+            
+            <div class="programs-container">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Tahfidz Al-Qur'an Bertahap & Terstruktur</h3>
+                    <p>Program hafalan Al-Qur'an dengan metode yang sesuai usia anak, dipandu oleh hafiz/hafizah berpengalaman.</p>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h3>Pembiasaan Sunnah Harian</h3>
+                    <p>Praktik sunnah harian seperti doa sehari-hari, adab makan-minum, bersosialisasi, dan ibadah praktis.</p>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Adab Islami dalam Aktivitas Sehari-hari</h3>
+                    <p>Pembiasaan adab kepada orang tua, guru, teman, dan lingkungan sesuai tuntunan Islam.</p>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Pembelajaran Aktif & Menyenangkan</h3>
+                    <p>Metode belajar yang aktif, kreatif, dan menyenangkan dengan pendekatan bermain sambil belajar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Sekolah Kami</h2>
+            <div class="divider"></div>
+            
+            <div class="advantages-container">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3>Lingkungan syar'i & terjaga</h3>
+                        <p>Lingkungan sekolah yang mendukung penerapan nilai-nilai Islam dengan pengawasan yang baik.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3>Fokus tahfidz & sunnah</h3>
+                        <p>Kurikulum yang menitikberatkan pada tahfidz Al-Qur'an dan pembiasaan sunnah Nabi.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3>Guru amanah & berpengalaman</h3>
+                        <p>Tenaga pendidik yang kompeten, berkomitmen, dan memiliki dedikasi tinggi dalam pendidikan anak.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3>Pendampingan akhlak & karakter</h3>
+                        <p>Program pendampingan intensif untuk membentuk akhlak dan karakter islami setiap siswa.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3>Rasio guru & murid ideal</h3>
+                        <p>Rasio guru dan murid yang ideal (1:10) memastikan setiap anak mendapat perhatian optimal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="daftar" class="section" style="background-color: rgba(62, 158, 106, 0.05);">
+        <div class="container">
+            <h2 class="section-title">Daftar PPDB Sekarang</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Isi formulir di bawah ini untuk mendaftar PPDB TK & SD Sekolah Mutiara Sunnah Legenda</p>
+            
+            <div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                <form id="ppdbForm" style="display: grid; gap: 20px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Nama Lengkap Orang Tua</label>
+                            <input type="text" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Nomor Telepon</label>
+                            <input type="tel" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                        <input type="email" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Nama Calon Siswa</label>
+                            <input type="text" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Tanggal Lahir</label>
+                            <input type="date" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Program yang Dipilih</label>
+                        <select style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;">
+                            <option value="">Pilih Program</option>
+                            <option value="tk-a">TK A (Usia 4-5 tahun)</option>
+                            <option value="tk-b">TK B (Usia 5-6 tahun)</option>
+                            <option value="sd-1">SD Kelas 1</option>
+                            <option value="sd-2">SD Kelas 2</option>
+                            <option value="sd-3">SD Kelas 3</option>
+                            <option value="sd-4">SD Kelas 4</option>
+                            <option value="sd-5">SD Kelas 5</option>
+                            <option value="sd-6">SD Kelas 6</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Pertanyaan atau Informasi Tambahan</label>
+                        <textarea rows="4" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Inter', sans-serif;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="max-width: none;">Kirim Pendaftaran</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Share Button -->
+    <div class="share-button" id="shareBtn">
+        <i class="fas fa-share-alt"></i>
+    </div>
+
+    <!-- Sticky CTA for Mobile -->
+    <div class="sticky-cta">
+        <div class="container">
+            <a href="#daftar" class="cta-button">Daftar PPDB Sekarang</a>
+            <div class="sticky-subtext">Kuota Terbatas • Tahun Ajaran Baru</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sekolah Mutiara Sunnah Legenda</h3>
+                    <p>TK & SD Islam Premium berbasis Tahfidz, Sunnah, dan Adab. Membentuk generasi muslim yang hafal Al-Qur'an, berakhlak mulia, dan berilmu bermanfaat.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Jl. Legenda Sunnah No. 123, Tangerang Selatan</p>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> (021) 4567-8901</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@mutiarasunnah.sch.id</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>PPDB Tahun Ajaran Baru</h3>
+                    <p>Pendaftaran dibuka untuk siswa TK A/B dan SD kelas 1-6. Kuota terbatas setiap tahunnya.</p>
+                    <a href="#daftar" class="cta-button" style="margin-top: 15px; width: 100%;">Hubungi Kami</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Sekolah Mutiara Sunnah Legenda. All rights reserved. | <a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Kebijakan Privasi</a> | <a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animasi sederhana untuk tombol CTA
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#daftar') {
+                    e.preventDefault();
+                    document.getElementById('daftar').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('ppdbForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih atas pendaftaran Anda! Tim kami akan menghubungi Anda dalam 1x24 jam.');
+            this.reset();
+        });
+        
+        // Efek sticky header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+        
+        // Responsif: tampilkan sticky CTA hanya di mobile
+        function checkScreenSize() {
+            const stickyCta = document.querySelector('.sticky-cta');
+            if (window.innerWidth <= 768) {
+                stickyCta.style.display = 'block';
+            } else {
+                stickyCta.style.display = 'none';
+            }
+        }
+        
+        // Share functionality
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'PPDB TK & SD Sekolah Mutiara Sunnah Legenda',
+                    text: 'Sekolah Islam Premium Berbasis Tahfidz, Sunnah, dan Adab',
+                    url: window.location.href,
+                })
+                .then(() => console.log('Berbagi berhasil'))
+                .catch((error) => console.log('Error sharing', error));
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const url = window.location.href;
+                const text = 'PPDB TK & SD Sekolah Mutiara Sunnah Legenda - Sekolah Islam Premium Berbasis Tahfidz, Sunnah, dan Adab';
+                
+                // Copy URL to clipboard
+                navigator.clipboard.writeText(url + '\n\n' + text)
+                    .then(() => {
+                        alert('Link telah disalin ke clipboard! Anda dapat membagikannya di media sosial.');
+                    })
+                    .catch(err => {
+                        console.error('Failed to copy: ', err);
+                    });
+            }
+        });
+        
+        // Initialize on load
+        window.addEventListener('load', function() {
+            checkScreenSize();
+            
+            // Add animation to elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            document.querySelectorAll('.value-card, .program-card, .advantage-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(el);
+            });
+        });
+        
+        window.addEventListener('resize', checkScreenSize);
+    </script>
+</body>
+</html>
